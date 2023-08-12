@@ -14,6 +14,13 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/devopscloudworld/demo.git']])
             }
         }
+
+         stage('Build....') {
+            steps {
+                echo 'Build the code...'
+                
+            }
+        }
         
     }
 }
